@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>dfgsfhdfghdfgdfgh</title>
+	
+	<link rel="shortcut icon" href="https://audments.net/favicon.png"/>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mali"> 
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="what's a blofg? why,">
+	<meta name="theme-color" content="#6495ED">
+	<meta name="author" content="Audrey">
+</head>
+<body>
+    <p>You may be worried about breaking your keyboard while keysmashing, this is a weird concern but I've addressed it, use my keysmash generator</p>
+    <button onclick="generateKeysmash()">Keysmash</button>
+    <div id="generated" style="display: none;">
+        <p id="here">Here is your keysmash made fresh just for you:</p>
+        <p id="keysmash">fghjgfhjgh</p>
+    </div>
+
+    <script src="js/arraymagic.js"></script>
+    <script src="js/keysmash.js"></script>
+    <script src="js/coolthings.js"></script>
+    <script>
+        var generatedElement = document.getElementById("generated");
+        var hereElement      = document.getElementById("here");
+        var keysmashElement  = document.getElementById("keysmash");
+
+        function generateKeysmash() {
+            hereElement.innerHTML = "Here is your keysmash " + getCoolThingToAddOntoTheEnd() + ":";
+            keysmashElement.innerHTML = fetchKeysmash();
+            generatedElement.style = "display: block;";
+        }
+    </script>
+</body>
+</html>
