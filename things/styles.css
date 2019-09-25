@@ -1,0 +1,103 @@
+/* relevant everywhere! */
+
+body {
+    background-color: #110033;
+    color: #EEEEFF;
+    font-family: "MS Gothic";
+    font-size: 10pt;
+    font-weight: normal;
+
+    /* images get smoothed. i dont want that for the Highest Quality of pixellated me */
+    image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+    image-rendering: -moz-crisp-edges;          /* Firefox                        */
+    image-rendering: -o-crisp-edges;            /* Opera                          */
+    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+    image-rendering: pixelated;                 /* Chrome                         */
+    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+
+    /* center it horizontally and make it 640 pixels wide */
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 0%);
+    width: 640px;
+}
+
+/* relevant just on the main page */
+
+.divider {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+a {
+    color: #6495ED;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #6495ED;
+    text-decoration: none;
+}
+
+.intro .hello {
+    float: left;
+}
+
+.intro .selfie {
+    float: right;
+}
+
+.selfie p {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.recent {
+    margin-bottom: 10px;
+}
+
+.portfolio .links {
+    width: 200px;
+    float: left;
+    text-align: right;
+}
+
+.portfolio .separator {
+    width: 20px;
+    float: left;
+}
+
+.portfolio .descriptions {
+    float: left;
+    text-align: left;
+}
+
+.portfolio ul {
+    display: inline;
+    list-style-type: none;
+}
+
+/* relevant just on blog posts */
+
+.blog-post .start, .blog-post .end {
+    text-align: center;
+}
+
+.blog-post .start #post-title {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.blog-post .start #post-date {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.blog-post .middle {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
